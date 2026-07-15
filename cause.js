@@ -1,23 +1,23 @@
  // Reasons database
  const reasons = [
     { 
-        text: "You’re such a kind and wonderful person, and I feel lucky to share such a good bond with you. 💖", 
+        text: "There is nothing I want more than to make you the happiest woman in the world, and I feel lucky to share such a good bond with you. 💖", 
         emoji: "🌟",
         gif: "gif1.gif"
     },
     { 
-        text: "May your day be filled with love, laughter, and endless joy. 🌸 ", 
+        text: "May your day be filled with love, laughter, and endless joy. 🌷 ", 
         emoji: "💗",
         gif: "gif2.gif"
     },
     { 
-        text: "Wishing you success, happiness, and everything your heart desires. ✨ ", 
+        text: "Being with you is the easiest choice I have ever made, and I'm so lucky I get to make it every day. ✨ ", 
         emoji: "💕",
         gif: "gif1.gif"
     },
     { 
         text: "Stay the amazing woman you are—always be. Have the happiest year ahead! 🥳 ", 
-        emoji: "🌟",
+        emoji: "✨",
         gif: "gif2.gif"
     }
 ];
@@ -76,7 +76,7 @@ function displayNewReason() {
                 duration: 0.5,
                 ease: "elastic.out",
                 onComplete: () => {
-                    shuffleButton.textContent = "Enter Our Storylane 💫";
+                    shuffleButton.textContent = "Enter Our Storylane ✨";
                     shuffleButton.classList.add('story-mode');
                     shuffleButton.addEventListener('click', () => {
                         gsap.to('body', {
@@ -117,7 +117,7 @@ shuffleButton.addEventListener('click', () => {
 
 // Floating elements function (same as before)
 function createFloatingElement() {
-    const elements = ['🌸', '✨', '💖', '🦋', '⭐'];
+    const elements = ['🌷', '✨', '💖', '🦋', '🌏'];
     const element = document.createElement('div');
     element.className = 'floating';
     element.textContent = elements[Math.floor(Math.random() * elements.length)];
